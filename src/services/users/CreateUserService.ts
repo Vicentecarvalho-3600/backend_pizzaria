@@ -37,7 +37,11 @@ class CreateUserService {
                 name: true,
                 email: true
             }
-        })
+        });
+
+        // gerar um token JWT e devolver os dados do usuario como id name e email
+        
+
 
         return user;
     }
