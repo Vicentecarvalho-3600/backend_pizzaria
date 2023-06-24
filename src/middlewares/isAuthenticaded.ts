@@ -26,8 +26,10 @@ export function isAuthenticaded(
             token,
             process.env.JWT_SECRET
         ) as Payload;
+        
+        //Recuperrar id do token e colocar dentro de um variavel user_id dentro do req
 
-        console.log(sub);
+        req.user_id = sub;
 
         return next();
 
